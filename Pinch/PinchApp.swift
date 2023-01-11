@@ -9,9 +9,22 @@ import SwiftUI
 
 @main
 struct PinchApp: App {
+
     var body: some Scene {
-        WindowGroup {
-            ContentView()
+        MenuBarExtra("Pincher", systemImage: "rectangle.and.hand.point.up.left") {
+            Button("Fix Pinch Gesture") {
+                let task = Process()
+                task.launchPath = "/bin/zsh"
+                task.arguments = ["killall Dock"]
+                try? task.run()
+            }
+
+            Divider()
+
+            Button("Quit") {
+                NSApplication.shared.terminate(nil)
+            }.keyboardShortcut("q")
         }
     }
+
 }

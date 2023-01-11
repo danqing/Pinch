@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		24EEDD9C296DF6BC00CDE23F /* PinchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24EEDD9B296DF6BC00CDE23F /* PinchApp.swift */; };
 		24EEDD9E296DF6BC00CDE23F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24EEDD9D296DF6BC00CDE23F /* ContentView.swift */; };
 		24EEDDA0296DF6BD00CDE23F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24EEDD9F296DF6BD00CDE23F /* Assets.xcassets */; };
 		24EEDDA3296DF6BD00CDE23F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24EEDDA2296DF6BD00CDE23F /* Preview Assets.xcassets */; };
 		24EEDDAE296DF6BD00CDE23F /* PinchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24EEDDAD296DF6BD00CDE23F /* PinchTests.swift */; };
 		24EEDDB8296DF6BD00CDE23F /* PinchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24EEDDB7296DF6BD00CDE23F /* PinchUITests.swift */; };
 		24EEDDBA296DF6BD00CDE23F /* PinchUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24EEDDB9296DF6BD00CDE23F /* PinchUITestsLaunchTests.swift */; };
+		24EEDDC9296F4EDA00CDE23F /* PinchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24EEDDC8296F4EDA00CDE23F /* PinchApp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +35,6 @@
 
 /* Begin PBXFileReference section */
 		24EEDD98296DF6BC00CDE23F /* Pinch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pinch.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		24EEDD9B296DF6BC00CDE23F /* PinchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinchApp.swift; sourceTree = "<group>"; };
 		24EEDD9D296DF6BC00CDE23F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		24EEDD9F296DF6BD00CDE23F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		24EEDDA2296DF6BD00CDE23F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -45,6 +44,7 @@
 		24EEDDB3296DF6BD00CDE23F /* PinchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PinchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		24EEDDB7296DF6BD00CDE23F /* PinchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinchUITests.swift; sourceTree = "<group>"; };
 		24EEDDB9296DF6BD00CDE23F /* PinchUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinchUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		24EEDDC8296F4EDA00CDE23F /* PinchApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinchApp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +95,7 @@
 		24EEDD9A296DF6BC00CDE23F /* Pinch */ = {
 			isa = PBXGroup;
 			children = (
-				24EEDD9B296DF6BC00CDE23F /* PinchApp.swift */,
+				24EEDDC8296F4EDA00CDE23F /* PinchApp.swift */,
 				24EEDD9D296DF6BC00CDE23F /* ContentView.swift */,
 				24EEDD9F296DF6BD00CDE23F /* Assets.xcassets */,
 				24EEDDA4296DF6BD00CDE23F /* Pinch.entitlements */,
@@ -260,7 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				24EEDD9E296DF6BC00CDE23F /* ContentView.swift in Sources */,
-				24EEDD9C296DF6BC00CDE23F /* PinchApp.swift in Sources */,
+				24EEDDC9296F4EDA00CDE23F /* PinchApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,11 +424,13 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = io.danqing.Pinch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -451,11 +453,13 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = io.danqing.Pinch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
