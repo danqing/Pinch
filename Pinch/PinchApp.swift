@@ -10,9 +10,11 @@ import SwiftUI
 
 @main
 struct PinchApp: App {
-
+    
+    @State private var startAtLogin = SMAppService.mainApp.status == .enabled
+        
     var body: some Scene {
-        MenuBarExtra("Pincher", systemImage: "arrow.up.left.and.arrow.down.right.circle") {
+        MenuBarExtra("Pincher", systemImage: "arrow.up.left.and.arrow.down.right.circle.fill") {
             Button("Fix Pinch Gesture") {
                 let task = Process()
                 task.launchPath = "/bin/zsh"
@@ -22,8 +24,13 @@ struct PinchApp: App {
 
             Divider()
             
-            Button("Start at Login") {
-                try? SMAppService.mainApp.register()
+            Button(startAtLogin ? "Stop Starting at Login" : "Start at Login") {
+                if SMAppService.mainApp.status == .enabled {
+                    try? SMAppService.mainApp.unregister()
+                } else {
+                    try? SMAppService.mainApp.register()
+                }
+                startAtLogin = !startAtLogin
             }
 
             Button("Quit") {
