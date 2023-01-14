@@ -4,6 +4,8 @@
 
 A simple menubar app that lets you fix faulty Mac trackpad pinch gesture in one click.
 
+[Download App here](https://github.com/danqing/Pinch/releases/download/1.0/Pinch.zip) — after downloading, unzip and drag to your Applications folder.
+
 ## Background
 
 Sometimes the two finger pinch (pan, zooming) gesture on a Mac trackpad would stop working. This is a bug first introduced in Monterey, but unfortunately it has not been fixed after all this time.
