@@ -12,7 +12,7 @@ import SwiftUI
 struct PinchApp: App {
 
     var body: some Scene {
-        MenuBarExtra("Pincher", systemImage: "rectangle.and.hand.point.up.left") {
+        MenuBarExtra("Pincher", systemImage: "arrow.up.left.and.arrow.down.right.circle") {
             Button("Fix Pinch Gesture") {
                 let task = Process()
                 task.launchPath = "/bin/zsh"
