@@ -13,6 +13,8 @@
 		24EEDDB8296DF6BD00CDE23F /* PinchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24EEDDB7296DF6BD00CDE23F /* PinchUITests.swift */; };
 		24EEDDBA296DF6BD00CDE23F /* PinchUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24EEDDB9296DF6BD00CDE23F /* PinchUITestsLaunchTests.swift */; };
 		24EEDDC9296F4EDA00CDE23F /* PinchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24EEDDC8296F4EDA00CDE23F /* PinchApp.swift */; };
+		37F16B5729759DC6005BE90B /* PreferencePanesSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37F16B5629759DC6005BE90B /* PreferencePanesSupport.framework */; };
+		37F16B5B2975B0FE005BE90B /* GestureHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 37F16B5A2975B0FE005BE90B /* GestureHandler.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +45,11 @@
 		24EEDDB7296DF6BD00CDE23F /* PinchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinchUITests.swift; sourceTree = "<group>"; };
 		24EEDDB9296DF6BD00CDE23F /* PinchUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinchUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		24EEDDC8296F4EDA00CDE23F /* PinchApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinchApp.swift; sourceTree = "<group>"; };
+		37F16B5629759DC6005BE90B /* PreferencePanesSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PreferencePanesSupport.framework; path = ../../../../System/Library/PrivateFrameworks/PreferencePanesSupport.framework; sourceTree = "<group>"; };
+		37F16B5A2975B0FE005BE90B /* GestureHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GestureHandler.m; sourceTree = "<group>"; };
+		37F16B5C2975B168005BE90B /* GestureHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GestureHandler.h; sourceTree = "<group>"; };
+		37F16B5D2975B27C005BE90B /* MTTGestureBackEnd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTTGestureBackEnd.h; sourceTree = "<group>"; };
+		37F16B5E2975B5A4005BE90B /* Pinch-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Pinch-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37F16B5729759DC6005BE90B /* PreferencePanesSupport.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,10 +81,12 @@
 		24EEDD8F296DF6BC00CDE23F = {
 			isa = PBXGroup;
 			children = (
+				37F16B5E2975B5A4005BE90B /* Pinch-Bridging-Header.h */,
 				24EEDD9A296DF6BC00CDE23F /* Pinch */,
 				24EEDDAC296DF6BD00CDE23F /* PinchTests */,
 				24EEDDB6296DF6BD00CDE23F /* PinchUITests */,
 				24EEDD99296DF6BC00CDE23F /* Products */,
+				37F16B5529759DC5005BE90B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,6 +104,9 @@
 			isa = PBXGroup;
 			children = (
 				24EEDDC8296F4EDA00CDE23F /* PinchApp.swift */,
+				37F16B5D2975B27C005BE90B /* MTTGestureBackEnd.h */,
+				37F16B5C2975B168005BE90B /* GestureHandler.h */,
+				37F16B5A2975B0FE005BE90B /* GestureHandler.m */,
 				24EEDD9F296DF6BD00CDE23F /* Assets.xcassets */,
 				24EEDDA4296DF6BD00CDE23F /* Pinch.entitlements */,
 				24EEDDA1296DF6BD00CDE23F /* Preview Content */,
@@ -124,6 +137,14 @@
 				24EEDDB9296DF6BD00CDE23F /* PinchUITestsLaunchTests.swift */,
 			);
 			path = PinchUITests;
+			sourceTree = "<group>";
+		};
+		37F16B5529759DC5005BE90B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				37F16B5629759DC6005BE90B /* PreferencePanesSupport.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,6 +215,7 @@
 				TargetAttributes = {
 					24EEDD97296DF6BC00CDE23F = {
 						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1420;
 					};
 					24EEDDA8296DF6BD00CDE23F = {
 						CreatedOnToolsVersion = 14.2;
@@ -256,6 +278,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37F16B5B2975B0FE005BE90B /* GestureHandler.m in Sources */,
 				24EEDDC9296F4EDA00CDE23F /* PinchApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -347,8 +370,15 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-weak_framework",
+					PreferencePanesSupport,
+					"-Wl,-dyld_env",
+					"-Wl,DYLD_VERSIONED_FRAMEWORK_PATH=/System/Library/PrivateFrameworks/PreferencePanesSupport.framework",
+				);
 				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "Pinch-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -400,8 +430,15 @@
 				MACOSX_DEPLOYMENT_TARGET = 12.6;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = (
+					"-weak_framework",
+					PreferencePanesSupport,
+					"-Wl,-dyld_env",
+					"-Wl,DYLD_VERSIONED_FRAMEWORK_PATH=/System/Library/PrivateFrameworks/PreferencePanesSupport.framework",
+				);
 				SDKROOT = macosx;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OBJC_BRIDGING_HEADER = "Pinch-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 			};
 			name = Release;
@@ -411,6 +448,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Pinch/Pinch.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -432,7 +470,12 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.danqing.Pinch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
+				);
 			};
 			name = Debug;
 		};
@@ -441,6 +484,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Pinch/Pinch.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -463,6 +507,10 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
+				);
 			};
 			name = Release;
 		};
