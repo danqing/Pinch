@@ -9,7 +9,7 @@
 @import Foundation;
 
 @interface GestureHandler: NSObject
-  
+
 + (GestureHandler *) sharedInstance;
 - (void)setTwoFingerPinch:(BOOL)enable;
 

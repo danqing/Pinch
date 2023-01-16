@@ -9,7 +9,7 @@
 @import Foundation;
 
 @interface MTTGestureBackEnd: NSObject
-  
+
 - (void)setTwoFingerPinch:(BOOL)enable;
 
 @end

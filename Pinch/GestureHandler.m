@@ -1,5 +1,5 @@
 //
-//  MTTGestureBackEnd.m
+//  GestureHandler.m
 //  Pinch
 //
 //  Created by Danqing Liu on 1/16/23.
@@ -15,10 +15,10 @@ static MTTGestureBackEnd *_backend = nil;
 
 + (GestureHandler *) sharedInstance {
     static dispatch_once_t onceToken;
-    
+
     dispatch_once(&onceToken, ^{
         NSBundle *bundle = [NSBundle bundleWithPath:@"/System/Library/PrivateFrameworks/PreferencePanesSupport.framework"];
-        
+
         if (![bundle load]) {
             NSLog(@"Failed to load framework");
         } else {
@@ -26,6 +26,7 @@ static MTTGestureBackEnd *_backend = nil;
             _handler = [[GestureHandler alloc] init];
         }
     });
+
     return _handler;
 }
 
