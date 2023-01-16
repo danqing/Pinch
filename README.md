@@ -4,16 +4,18 @@
 
 A simple menubar app that lets you fix faulty Mac trackpad pinch gesture in one click.
 
-[Download App here](https://github.com/danqing/Pinch/releases/download/1.0/Pinch.zip) — after downloading, unzip and drag to your Applications folder.
+[Download App here](https://github.com/danqing/Pinch/releases/download/1.1/Pinch.zip) — after downloading, unzip and drag to your Applications folder.
 
 ## Background
 
 Sometimes the two finger pinch (pan, zooming) gesture on a Mac trackpad would stop working. This is a bug first introduced in Monterey, but unfortunately it has not been fixed after all this time.
 
-The most reliable fix of the problem is to kill the Dock process. That is, you can run the following command in your terminal:
+A fix that worked for me is killing the Dock process. That is, you can run the following command in your terminal:
 
 ```sh
 killall Dock
 ```
 
-But not everyone uses the terminal, and I personally often forget the command. So I made this simple menubar tool that calls the command for you. Just click on "Fix Pinch Gesture," and voila!
+So I made it into a menubar app that you can use to fix the issue in one click. Just click on "Fix Pinch Gesture," and voila!
+
+[Since I shared the app](https://twitter.com/danqing_liu/status/1614308997653499905), it came to my attention that the command doesn't work for everyone. So I updated the app to toggle on/off the preference in addition. I hope this is a reliable enough fix. If not, please let me know by opening an issue or [reaching out on Twitter](https://twitter.com/danqing_liu)!
