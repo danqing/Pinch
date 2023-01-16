@@ -16,7 +16,7 @@ struct PinchApp: App {
     var body: some Scene {
         MenuBarExtra("Pincher", systemImage: "arrow.up.left.and.arrow.down.right.circle.fill") {
             Button("Fix Pinch Gesture") {
-                let task = Process.launchedProcess(launchPath: "/bin/zsh", arguments: ["-c", "killall Dock"])
+                let task = Process.launchedProcess(launchPath: "/usr/bin/killall", arguments: [ "Dock"])
                 task.waitUntilExit()
             }
 
