@@ -19,9 +19,8 @@ struct PinchApp: App {
     var body: some Scene {
         MenuBarExtra("Pincher", systemImage: "arrow.up.left.and.arrow.down.right.circle.fill") {
             Button("Fix Pinch Gesture") {
-                // Kill Dock - not needed right now.
-                // let task = Process.launchedProcess(launchPath: "/usr/bin/killall", arguments: [ "Dock"])
-                // task.waitUntilExit()
+                let task = Process.launchedProcess(launchPath: "/usr/bin/killall", arguments: ["Dock"])
+                task.waitUntilExit()
                 
                 toggleTrackpad(mode: false)
                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
