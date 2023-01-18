@@ -4,7 +4,7 @@
 
 A simple menubar app that lets you fix faulty Mac trackpad pinch gesture in one click.
 
-[Download App here](https://github.com/danqing/Pinch/releases/download/1.1/Pinch.zip) — after downloading, unzip and drag to your Applications folder.
+[Download App here](https://github.com/danqing/Pinch/releases/download/1.1.1/Pinch.zip) — after downloading, unzip and drag to your Applications folder.
 
 ## Background
 
