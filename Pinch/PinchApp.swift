@@ -14,8 +14,6 @@ struct PinchApp: App {
 
     @State private var startAtLogin = SMAppService.mainApp.status == .enabled
 
-    private var prefPanesSupport: Bundle!
-
     var body: some Scene {
         MenuBarExtra("Pincher", systemImage: "arrow.up.left.and.arrow.down.right.circle.fill") {
             Button("Fix Pinch Gesture") {
@@ -23,7 +21,7 @@ struct PinchApp: App {
                 task.waitUntilExit()
 
                 toggleTrackpad(mode: false)
-                DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
                     toggleTrackpad(mode: true)
                 }
             }
