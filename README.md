@@ -18,4 +18,4 @@ killall Dock
 
 So I made it into a menubar app that you can use to fix the issue in one click. Just click on "Fix Pinch Gesture," and voila!
 
-[Since I shared the app](https://twitter.com/danqing_liu/status/1614308997653499905), it came to my attention that the command doesn't work for everyone. So I updated the app to toggle on/off the preference in addition. I hope this is a reliable enough fix. If not, please let me know by opening an issue or [reaching out on Twitter](https://twitter.com/danqing_liu)!
+[Since I shared the app](https://twitter.com/danqing_liu/status/1614308997653499905), it came to my attention that the command doesn't work for everyone. So I updated the app to toggle on/off the preference in addition. I hope this is a reliable enough fix. If not, please let me know by opening an issue or [reaching out on Twitter](https://twitter.com/danqing_liu)! You can check out the [discussions here](https://github.com/danqing/Pinch/issues/1) for more info.
